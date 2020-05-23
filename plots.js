@@ -3,6 +3,8 @@
 var myData = d3.json("https://www.quandl.com/api/v3/datasets/WIKI/AMZN.json?start_date=2016-10-01&end_date=2017-10-01&collapse=monthly&api_key=KuveC1TwyB5kxYEsoiE2").then
 (data => data)
 
+console.log(myData);
+
 d3.json("data/data.json").then((importedData) => {
   // console.log(importedData);
   var data = importedData;
